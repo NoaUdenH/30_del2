@@ -1,6 +1,3 @@
-package dasuki;
-
-
 public class Konto {
 
     int Balance;
