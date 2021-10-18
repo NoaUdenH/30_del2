@@ -72,13 +72,13 @@ public class Konto {
         return Balance;
     }
 
-
+    // Mindste værdi for konto
+    int MIN = 0;
     public void minBalance() {
-        int MIN = 0;
-        if (Balance <= MIN) {
+        if (Balance < MIN)
             Balance = 0;
-        }
     }
+
 
     public String toString() {
         return Integer.toString(Balance);

@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.*;
 
 public class Game {
@@ -162,6 +163,12 @@ public class Game {
         System.out.println(rolls);
         System.out.println(rolls.size());
         countFrequencies(rolls);
+
+// Test af balancens mindsteværdi
+        System.out.println("nuværende balance på konto: " + B1);
+        System.out.println("sætter kontoens balance til -10 og printer balancen");
+        B1.setBalance(-10);
+        System.out.println(B1);
     }
 
 
