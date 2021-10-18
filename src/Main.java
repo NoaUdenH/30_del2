@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Welcome to the Dice and Roll game!");
+        System.out.println("Velkommen til Terninge Eventyret!");
 
         Game game = new Game();
 
@@ -19,12 +19,12 @@ public class Main {
 
             while (optionSelected > 4 || optionSelected < 0) {
 
-                System.out.print("Option entered invalid, please enter a number from 1 to 5: ");
+                System.out.print("Invalid mulighed valgt, venligst input et nummer mellem 1 og 4: ");
                 optionSelected = sc.nextInt();
             }
 
             if (optionSelected == 4) {
-                System.out.println("Exiting Spill");
+                System.out.println("Afslutter Spil");
                 break;
             }
 
@@ -33,7 +33,7 @@ public class Main {
             boolean anyoneWin = game.TjekHvisNogenHarVndet();
             if (anyoneWin) {
                 System.out.println();
-                System.out.println("Spillet sluttede .");
+                System.out.println("Spillet sluttede.");
                 break;
             }
         }

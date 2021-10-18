@@ -33,10 +33,10 @@ public class Game {
     void displayGameMenu() {
         System.out.println();
         System.out.println("(1) Start et nyt spil");
-        System.out.println("(2) Spil en runde ");
-        System.out.println("(3) test");
+        System.out.println("(2) Spil en runde");
+        System.out.println("(3) Test (Tal-fordeling og Negativ Balance)");
         System.out.println("(4) Afslut spil");
-        System.out.print("Vælg en option: ");
+        System.out.print("Vælg en mulighed: ");
     }
 
     void VisSpilInstruktion() {
@@ -44,9 +44,9 @@ public class Game {
         String P2Navn;
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("Indtast venligst først spillerens navn: ");
+        System.out.print("Indtast venligst første spillers navn: ");
         P1Navn = sc.nextLine();
-        System.out.print("Indtast venligst anden spillerens navn: ");
+        System.out.print("Indtast venligst anden spillers navn: ");
         P2Navn = sc.nextLine();
 
 
