@@ -124,7 +124,7 @@ public class Game {
     }
 
     boolean TjekHvisNogenHarVndet() {
-        int scoreForAtVinde = 100000;
+        int scoreForAtVinde = 3000;
         if (B1.getBalance() >= scoreForAtVinde && B2.getBalance() >= scoreForAtVinde) {
             System.out.println("Det er uafgjort! Begge spillere har overskredet scoregrænsen");
             return true;
