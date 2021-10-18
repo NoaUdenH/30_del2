@@ -1,4 +1,4 @@
-package dasuki;
+
 
 import java.util.Scanner;
 
