@@ -19,7 +19,7 @@ public class Main {
 
             while (optionSelected > 4 || optionSelected < 0) {
 
-                System.out.print("Invalid mulighed valgt, venligst input et nummer mellem 1 og 4: ");
+                System.out.print("Ugyldig mulighed, vælg venligst et nummer mellem 1 og 4: ");
                 optionSelected = sc.nextInt();
             }
 
