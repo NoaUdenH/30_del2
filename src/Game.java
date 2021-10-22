@@ -66,57 +66,68 @@ public class Game {
 
         if (m == 2) {
             result = B.getTower();
+            if (result < 0) result = 0;
             System.out.println(P.getnavn() + " kastede " + m + " og støder på et tårn, i modsætning til i eventyr rummer dette tårn ikke en prinsesse. Det rummer dog 250 guldmønter. Tag disse med dig på din søgen. " + " og nu har du " + result + " guldmønter tilbage .");
             B.setBalance(result);
 
         } else if (m == 3) {
             result = B.getCrater();
+            if (result < 0) result = 0;
             System.out.println(P.getnavn() + " kastede " + m + " nu støder på et krater. Du falder ind i det, og mens du falder ned taber du 100 guldmønter" + " og nu har du " + result + " guldmønter tilbage. ");
             B.setBalance(result);
 
         } else if (m == 4) {
             result = B.getPalaceGates();
+            if (result < 0) result = 0;
             System.out.println(P.getnavn() + " kastede  " + m + " Du støder på Palace Gates. Du lurer nogen til at betale dig et gebyr på 100 guldmønter for at passere gennem portene " + "og nu har du " + result + " guldmønter tilbage. ");
             B.setBalance(result);
 
         } else if (m == 5) {
             result = B.getColdDesert();
+            if (result < 0) result = 0;
             System.out.println(P.getnavn() + " kastede " + m + " Du har vandret ind i de kolde ørkener, for at holde dig varm, tænder du dine guldmønter i brand. Du brænder igennem 20 guldmønter, men er nu varm " + " og nu har du " + result + " guldmønter tilbage. ");
             B.setBalance(result);
 
         } else if (m == 6) {
             result = B.getWalledCity();
+            if (result < 0) result = 0;
             System.out.println(P.getnavn() + " kastede  " + m + " Du støder på en befæstet by. Byen har desperat brug for udlændinge til at befolke deres genpulje, betaler de dig 180 guldnåle for at blive. " + "og nu har du " + result + " guldmønter tilbage. ");
             B.setBalance(result);
 
         } else if (m == 7) {
             result = B.getMonastery();
+            if (result < 0) result = 0;
             System.out.println(P.getnavn() + " kastede " + m + " Du besøger et kloster på dine rejser. De lader dig overnatte uden gebyrer. Du får dog ingen guldmønter denne runde " + " og nu har du " + result + " guldmønter tilbage. ");
             B.setBalance(result);
 
         } else if (m == 8) {
             result = B.getBlackCave();
+            if (result < 0) result = 0;
             System.out.println(P.getnavn() + " kastede " + m + " Du er stødt på den sorte hule. Du opdager, at det er et bordel, og bruger heldigvis 70 guldmønter for at overnatte " + " og nu har du " + result + " guldmønter tilbage. ");
             B.setBalance(result);
 
         } else if (m == 9) {
             result = B.getHutsInTheMountain();
+            if (result < 0) result = 0;
             System.out.println(P.getnavn() + " kastede " + m + " Du opdager nogle hytter i et bjerg. Du søger igennem dem og finder 70 guldmønter. Ingen bor her, så du putter dem i lommen " + " og nu har du " + result + " guldmønter tilbage. ");
             B.setBalance(result);
-        } else if (m == 10) {
 
+        } else if (m == 10) {
             result = B.getTheWereWall();
+            if (result < 0) result = 0;
             System.out.println(P.getnavn() + " kastede " + m + " Du støder på Werewall. Varulvene skræmmer dig, og du taber 80 guldmønter. Du opdager, at de faktisk var Girl Scout, der prøvede nye metoder i stedet for at sælge cookies. Du løb så hurtigt, at du får en ekstra tur " + " og nu har du " + result + " guldmønter tilbage. ");
             B.setBalance(result);
             playOneRound(P, B);
 
         } else if (m == 11) {
             result = B.getThePit();
+            if (result < 0) result = 0;
             System.out.println(P.getnavn() + " kastede " + m + " Du støder på en grube. Ligesom dine forbrugsvaner i den virkelige verden, smider du også penge ind i denne pit. Du mister 50 guldmønter " + " og nu har du " + result + " guldmønter tilbage. ");
             B.setBalance(result);
 
         } else if (m == 12) {
             result = B.getGoldmine();
+            if (result < 0) result = 0;
             System.out.println(P.getnavn() + " kastede " + m + " Du finder en forladt guldgrube. Du går ind og finder guld til en værdi af 650 guldmønter. Dette må være din heldige dag! " + " og nu har du " + result + " guldmønter tilbage. ");
             B.setBalance(result);
         }
