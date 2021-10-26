@@ -65,7 +65,7 @@ public class Konto {
 
     public void setBalance(int point) {
         Balance = point;
-        minBalance();
+//        minBalance();
     }
 
     public int getBalance() {
@@ -73,11 +73,11 @@ public class Konto {
     }
 
     // Mindste værdi for konto
-    int MIN = 0;
-    public void minBalance() {
-        if (Balance < MIN)
-            Balance = 0;
-    }
+//    int MIN = 0;
+//    public void minBalance() {
+//        if (Balance < MIN)
+//            Balance = 0;
+//    }
 
 
     public String toString() {
